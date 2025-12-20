@@ -59,7 +59,7 @@
         "pump": "3.0.0"
     },
     "browserslist": [
-        "defaults"
+        "since 2015"
     ],
     "config": {
         "posts_per_page": 12,

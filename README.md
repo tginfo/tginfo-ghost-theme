@@ -1,7 +1,10 @@
 # @tginfo Ghost Theme
 
-:warning: This is a fork of the https://github.com/SourceTheme-i18n/Source theme
-which is itself a fork of the official Ghost Source theme to add translations.
+> [!WARNING] 
+> This is a fork of the https://github.com/SourceTheme-i18n/Source theme
+> which is itself a fork of the official Ghost Source theme to add translations.
+> The original theme is set as upstream, only translations needed by @tginfo org
+> will be maintained by the @tginfo members.
 
 Over time, this theme might diverge from the original Source theme significantly
 to better suit the needs of the @tginfo org.
