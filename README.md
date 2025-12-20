@@ -76,7 +76,8 @@ You can add your own SVG icons in the same manner.
 
 # Copyright & License
 
-Copyright (c) 2013-2025 Ghost Foundation 
-- Released under the [MIT license](https://github.com/TryGhost/Source/blob/fb58907579dfc2c73f4e8d74da43857b163351fe/LICENSE).
-Copyright (c) 2023-2025 [Source i18n contributors](https://github.com/SourceTheme-i18n/Source/graphs/contributors) 
-- Released under the [MIT license](https://github.com/SourceTheme-i18n/Source/blob/89c6c67354e266ffba0aef3bd6a322590e80e3e5/LICENSE).
+Copyright (c) 2013-2025 Ghost Foundation - 
+Released under the [MIT license](https://github.com/TryGhost/Source/blob/fb58907579dfc2c73f4e8d74da43857b163351fe/LICENSE).
+
+Copyright (c) 2023-2025 [Source i18n contributors](https://github.com/SourceTheme-i18n/Source/graphs/contributors) - 
+Released under the [MIT license](https://github.com/SourceTheme-i18n/Source/blob/89c6c67354e266ffba0aef3bd6a322590e80e3e5/LICENSE).
