@@ -6,6 +6,9 @@
     <title>{{meta_title}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="al:android:app_name" content="Medium" />
+    <meta property="og:site_name" content="{{@site.title}}" />
+    <meta name="telegram:channel" content="@{{@custom.telegram_username}}" />
     
     {{!-- Preload main styles and scripts for better performance --}}
     <link rel="preload" as="style" href="{{asset "built/screen.css"}}">
@@ -42,6 +45,33 @@
 
         document.documentElement.className = `has-${textColor}-text`;
     </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            var gtagScript = document.createElement("script");
+            gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-JV6K9JXR6J";
+            gtagScript.async = true;
+            document.head.appendChild(gtagScript);
+
+            setTimeout(function () {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'G-JV6K9JXR6J');
+            }, 0);
+        });
+    </script>
+
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } } k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(51195098, "init", { clickmap: false, trackLinks: true, accurateTrackBounce: true });
+            }, 0);
+        });
+    </script> <noscript>
+        <div><img src="https://mc.yandex.ru/watch/51195098" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
 
     {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings, it should always be the last tag before the closing head tag --}}
     {{ghost_head}}
