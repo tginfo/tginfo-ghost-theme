@@ -23,46 +23,46 @@
                     {{#match @custom.header_style "Highlight"}}
                         {{#if @custom.show_featured_posts}}
                             {{#match posts.length ">=" 4}}
-                                {{#get "posts" include="authors" limit="16"}}
+                             {{!--   {{#get "posts" include="authors" limit="16"}} --}}
                                     {{#foreach posts from="5"}}
                                         {{> "post-card" lazyLoad=true}}
                                     {{/foreach}}
-                                {{/get}}
+                                {{!--{{/get}} --}}
                             {{/match}}
                         {{else}}
                             {{#match posts.length ">=" 10}}
-                                {{#get "posts" include="authors" limit="22"}}
+                                {{!--   {{#get "posts" include="authors" limit="22"}} --}}
                                     {{#foreach posts from="11"}}
                                         {{> "post-card" lazyLoad=true}}
                                     {{/foreach}}
-                                {{/get}}
+                                {{!--   {{/get}} --}}
                             {{/match}}
                         {{/if}}
                     {{else match @custom.header_style "Magazine"}}
                         {{#match posts.length ">=" 7}}
-                            {{#get "posts" include="authors" limit="19"}}
+                            {{!-- {{#get "posts" include="authors" limit="19"}} --}}
                                 {{#foreach posts from="8"}}
                                     {{> "post-card" lazyLoad=true}}
                                 {{/foreach}}
-                            {{/get}}
+                            {{!-- }} --}}
                         {{/match}}
                     {{else}}
-                        {{#get "posts" include="authors" limit="12"}}
+                        {{!-- {{#get "posts" include="authors" limit="12"}} --}}
                             {{#foreach posts}}
                                 {{> "post-card" lazyLoad=true}}
                             {{/foreach}}
-                        {{/get}}
+                        {{!-- }} --}}
                     {{/match}}
                 {{/match}}
 
                 {{!-- All posts --}}
                 {{#match feed "index"}}
                     {{#match pagination.page 2}}
-                        {{#get "posts" include="authors" limit=@config.posts_per_page as |recent|}}
+                        {{!--   {{#get "posts" include="authors" limit=@config.posts_per_page as |recent|}} --}}
                             {{#foreach recent}}
                                 {{> "post-card"}}
                             {{/foreach}}
-                        {{/get}}
+                        {{!--   {{/get}} --}}
                     {{/match}}
                     {{#foreach posts}}
                         {{> "post-card" lazyLoad=true}}
@@ -89,14 +89,17 @@
             <aside class="gh-sidebar">
                 <div class="gh-sidebar-inner">
                     <section class="gh-about">
-                        {{#if @site.icon}}
-                            <img class="gh-about-icon" src="{{@site.icon}}" alt="{{@site.title}}" loading="lazy">
+                        {{#if @site.logo}}
+                            <img class="gh-about-icon" src="{{@site.logo}}" alt="{{@site.title}}" loading="lazy">
                         {{/if}}
                         <h3 class="gh-about-title is-title">{{@site.title}}</h3>
                         {{#if @site.description}}
                             <p class="gh-about-description is-body">{{@site.description}}</p>
                         {{/if}}
-                        {{#if @site.members_enabled}}
+                        {{#if @custom.telegram_username}}
+                            <a class="gh-button" href="https://t.me/{{@custom.telegram_username}}" target="_blank">{{t "Read on Telegram"}}</a>
+                        {{/if}}
+                        {{!-- {{#if @site.members_enabled}}
                             {{#unless @member}}
                                 <button class="gh-button" data-portal="signup">{{t "Subscribe"}}</button>
                             {{else}}
@@ -106,7 +109,7 @@
                                     {{/unless}}
                                 {{/if}}
                             {{/unless}}
-                        {{/if}}
+                        {{/if}} --}}
                     </section>
                     {{#if @site.recommendations_enabled}}
                         <section class="gh-recommendations">

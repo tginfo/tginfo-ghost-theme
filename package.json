@@ -131,6 +131,10 @@
                 "type": "text",
                 "description": "Defaults to site description when empty"
             },
+            "telegram_username": {
+                "type": "text",
+                "description": "Your Telegram username (without @) to show Telegram links across the website"
+            },
             "header_style": {
                 "type": "select",
                 "options": [
