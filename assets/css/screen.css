@@ -1592,7 +1592,8 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-more {
-    display: none;
+    /*display: none;*/
+    display: block;
     grid-column: 1 / -1;
     margin-top: 48px;
     font-size: calc(1.9rem * var(--factor, 1));

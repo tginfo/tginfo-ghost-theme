@@ -1,0 +1,1 @@
+- Revert commented out custom fetching in index and css for pagination button when russian branch standardizes tags use
