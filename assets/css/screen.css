@@ -2211,7 +2211,7 @@ unless a heading is the very first element in the post content */
 }
 
 .gh-content .gh-table {
-    overflow-x: scroll;
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
 
