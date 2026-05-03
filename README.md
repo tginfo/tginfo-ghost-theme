@@ -73,10 +73,13 @@ of the relevant file, eg. To include the SVG icon
 in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
 
 You can add your own SVG icons in the same manner.
+# Translations
+
+Please see [@TryGhost/Themes/theme-translations/README.md](https://github.com/TryGhost/Themes/blob/main/packages/theme-translations/README.md) for how to build, edit, or contribute translations.
 
 # Copyright & License
 
-Copyright (c) 2013-2025 Ghost Foundation - 
+Copyright (c) 2013-2026 Ghost Foundation - 
 Released under the [MIT license](https://github.com/TryGhost/Source/blob/fb58907579dfc2c73f4e8d74da43857b163351fe/LICENSE).
 
 Copyright (c) 2023-2025 [Source i18n contributors](https://github.com/SourceTheme-i18n/Source/graphs/contributors) - 

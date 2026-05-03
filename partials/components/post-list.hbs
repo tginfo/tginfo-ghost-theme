@@ -47,7 +47,7 @@
                             {{!-- }} --}}
                         {{/match}}
                     {{else}}
-                        {{!-- {{#get "posts" include="authors" limit="12"}} --}}
+                        {{!-- {{#get "posts" include="authors" limit=@config.posts_per_page}} --}}
                             {{#foreach posts}}
                                 {{> "post-card" lazyLoad=true}}
                             {{/foreach}}
@@ -80,7 +80,7 @@
 
             {{!-- {{#match pagination.pages ">" 1}} --}}
                 <div class="gh-more is-title">
-                    <a href="{{@site.url}}/page/2">{{t "See all"}} {{> "icons/arrow"}}</a>
+                    <a href="{{@site.url}}/page/2/">{{t "See all"}} {{> "icons/arrow"}}</a>
                 </div>
             {{!-- {{/match}} --}}
         </main>
