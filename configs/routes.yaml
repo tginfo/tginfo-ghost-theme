@@ -1,0 +1,27 @@
+routes:
+
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+    filter: tag:-[english,translators,wip,faq-english,news,direct-link]
+  /en/:
+    permalink: /en/{slug}/
+    template: tag
+    filter: tag:[english,faq-english,news]
+    data: tag.english
+  /translators/:
+    permalink: /translators/{slug}/
+    template: tag
+    filter: tag:translators
+    data: tag.translators
+  /wip/:
+    permalink: /wip/{slug}/
+    template: tag
+    filter: tag:wip
+    data: tag.wip    
+
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
