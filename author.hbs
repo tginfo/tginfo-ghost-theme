@@ -20,7 +20,7 @@
                     <footer class="gh-author-meta">
                         <div class="gh-author-social">
                             {{#if twitter}}
-                                <a class="gh-author-social-link" href="{{social_url type="twitter"}}" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+                                <a class="gh-author-social-link" href="{{social_url type="twitter"}}" target="_blank" rel="noopener">{{> "icons/x"}}</a>
                             {{/if}}
                             {{#if facebook}}
                                 <a class="gh-author-social-link" href="{{social_url type="facebook"}}" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
@@ -53,12 +53,12 @@
                     </footer>
                 </div>
                 {{#if profile_image}}
-                    <img class="gh-article-image" src="{{img_url profile_image size="s"}}" alt="{{name}}">
+                    <img class="gh-article-image" src="{{img_url profile_image size="s" format="webp"}}" alt="{{name}}">
                 {{/if}}
             </div>
         </section>
     {{/author}}
-    
+
     {{> "components/post-list" feed="archive" postFeedStyle=@custom.post_feed_style showTitle=false showSidebar=@custom.show_publication_info_sidebar}}
 
 </main>
