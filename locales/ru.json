@@ -8,6 +8,7 @@
     "1 issue": "1 выпуск",
     "1 min": "1 мин.",
     "1 min read": "читается за 1 мин.",
+    "@tginfo team": "Команда @tginfo",
     "A collection of 0 issues": "Подборка из 0 выпусков",
     "A collection of 0 posts": "Подборка из 0 постов",
     "A collection of 1 issue": "Подборка из 1 выпуска",
@@ -61,8 +62,6 @@
     "Paid": "Платно",
     "Paid-members only": "Только по платной подписке",
     "Please enter a valid email address": "Пожалуйста, введите правильный email адрес",
-    "Powered by Ghost": "Команда @tginfo",
-    "Powered by {ghostlink}": "Команда @tginfo",
     "Previous": "Назад",
     "Previous (arrow left)": "Назад (стрелка влево)",
     "Previous issue": "Предыдущий выпуск",
@@ -117,6 +116,5 @@
     "comment": "Комментарий",
     "comments": "Комментарии",
     "in {primaryTag}": "в категории «{primaryTag}»",
-    "jamie@example.com": "",
     "← Previous": "← Предыдущий"
 }
