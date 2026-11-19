@@ -1011,7 +1011,8 @@ html.gh-navigation-open {
 .gh-card-image {
     position: relative;
     flex-shrink: 0;
-    aspect-ratio: 16 / 9;
+    /* aspect-ratio: 16 / 9; */
+    aspect-ratio: 131 / 82;
 }
 
 .gh-card-image img {
@@ -1308,7 +1309,8 @@ html.gh-navigation-open {
 }
 
 .gh-header.is-highlight .gh-header-left .gh-card .gh-card-image {
-    aspect-ratio: 3 / 2;
+    /* aspect-ratio: 3 / 2; */
+    aspect-ratio: 131 / 82;
 }
 
 .gh-header.is-highlight .gh-header-left .gh-card .gh-card-tag {
