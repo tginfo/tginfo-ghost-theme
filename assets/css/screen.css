@@ -3636,5 +3636,5 @@ body[class^="gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-head
 }
 
 .gh-content a[name]:empty {
-    display: none;
+    margin: 0;
 }
