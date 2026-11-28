@@ -57,6 +57,36 @@ you can then upload to your site.
 pnpm zip
 ```
 
+# Automated deployment
+
+Configure a `GHOST_SITES` repository variable secret in **Settings › Secrets and variables › Actions** as a JSON object with a `sites` array:
+
+```json
+{
+  "sites": [
+    {
+      "name": "site-main",
+      "url": "https://example.com",
+      "key": "content-api-key"
+    },
+    {
+      "name": "site-alt",
+      "url": "https://example.org",
+      "key": "content-api-key",
+      "activate": true
+    }
+  ]
+}
+```
+
+Each entry in `sites` supports:
+
+-   `url` (required) - Ghost Admin API base URL (e.g. `https://tginfo.me` or your separate admin domain).
+-   `key` (required) - Ghost Admin API key from **Settings → Integrations → Custom integrations** (`<id>:<hex-secret>`).
+-   `name` (optional) - Friendly label for workflow logs and job summary (defaults to the URL host).
+-   `activate` (optional, default `false`) - When `true`, activates the uploaded theme if it is not already active.
+-   `version` (optional, default `"v5.0"`) - Value sent in the Ghost `Accept-Version` header.
+
 # Publishing a release
 
 Releases are shipped from an up-to-date, clean `main` branch in two steps. Before starting, configure `GST_TOKEN` with a GitHub token that can create releases in `TryGhost/Source`.
